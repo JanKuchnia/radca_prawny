@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kancelaria Radcy Prawnego Andrzej Kusiak | Myślenice</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<!-- Elegant editorial typography: Playfair Display + Cormorant Garamond for headlines & Newsreader editorial feeling, Plus Jakarta Sans for fine typography -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            parchment: "#fcfaf6",
+            "parchment-subtle": "#f4efe6",
+            "parchment-deep": "#ebe3d5",
+            forest: "#0d2b22",
+            "forest-light": "#143d32",
+            "forest-border": "#1f4e41",
+            terracotta: "#c2613b",
+            ochre: "#b45309",
+            "ochre-gold": "#c88a38",
+            ink: "#1c2321",
+            "ink-soft": "#38433f",
+            "ink-muted": "#606d67",
+            oak: "#4a3525",
+          },
+          fontFamily: {
+            headline: ["'Playfair Display'", "serif"],
+            editorial: ["'Cormorant Garamond'", "serif"],
+            sans: ["'Plus Jakarta Sans'", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      html { scroll-behavior: smooth; }
+      body {
+        background-color: #fcfaf6;
+        color: #1c2321;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    }
+    .dropcap::first-letter {
+      float: left;
+      font-family: 'Playfair Display', serif;
+      font-size: 4.2rem;
+      line-height: 0.8;
+      padding-top: 4px;
+      padding-right: 12px;
+      padding-bottom: 2px;
+      color: #0d2b22;
+      font-weight: 700;
+    }
+    .paper-texture {
+      background-image: radial-gradient(#d6cbba 0.75px, transparent 0.75px);
+      background-size: 16px 16px;
+    }
+  </style>
+</head>
+<body class="bg-parchment text-ink antialiased selection:bg-ochre-gold/30 selection:text-forest">
+<!-- Top Gazette Editorial Masthead Topbar -->
+<div class="border-b border-parchment-deep bg-parchment-subtle/80 text-[12px] font-sans text-ink-muted">
+<div class="max-w-[1240px] mx-auto px-4 sm:px-8 py-2 flex flex-wrap justify-between items-center gap-3">
+<div class="flex items-center gap-4">
+<span class="inline-flex items-center gap-1.5 font-semibold text-forest uppercase tracking-widest text-[11px]">
+<span class="w-2 h-2 rounded-full bg-forest"></span>
+          Kancelaria Radcowska • Myślenice
+        </span>
+<span class="hidden md:inline text-parchment-deep">|</span>
+<span class="hidden md:inline font-editorial italic text-ink-soft text-[14px]">Wpis na listę OIRP w Krakowie • Mec. Andrzej Kusiak</span>
+</div>
+<div class="flex items-center gap-5">
+<span class="hidden sm:inline font-medium">Spotkania: stacjonarnie &amp; online</span>
+<a class="inline-flex items-center gap-1.5 text-forest font-semibold hover:text-ochre transition-colors" href="tel:+48510175906">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>+48 510 175 906</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Primary Journal Header -->
+<header class="sticky top-0 z-50 bg-parchment/95 backdrop-blur-md border-b-2 border-forest">
+<div class="max-w-[1240px] mx-auto px-4 sm:px-8 py-4 flex items-center justify-between gap-6">
+<!-- Brand & Traditional Monogram Stamp -->
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="w-11 h-11 rounded-none border-2 border-forest bg-forest flex items-center justify-center text-parchment group-hover:bg-forest-light transition-colors shadow-sm">
+<span class="font-headline font-bold text-lg tracking-wider">AK</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline text-[21px] sm:text-[23px] font-bold text-forest leading-none tracking-tight">
+            Andrzej Kusiak
+          </span>
+<span class="font-editorial text-[14px] italic text-ink-soft font-semibold tracking-wider mt-1">
+            Kancelaria Radcy Prawnego w Myślenicach
+          </span>
+</div>
+</a>
+<!-- Journal Section Links -->
+<nav class="hidden lg:flex items-center gap-8 font-sans text-[14px] tracking-wide font-medium text-ink-soft">
+<a class="hover:text-forest transition-colors py-1 relative hover:after:content-[''] hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-[2px] hover:after:bg-ochre" href="#dossier">Dossier Prawne</a>
+<a class="hover:text-forest transition-colors py-1" href="#gazeta-spraw">Z sali sądowej i gabinetu</a>
+<a class="hover:text-forest transition-colors py-1" href="#metoda">Standard rzemiosła</a>
+<a class="hover:text-forest transition-colors py-1" href="#referencje">Zaufanie i etyka</a>
+<a class="hover:text-forest transition-colors py-1" href="#gabinet-kontakt">Gabinet &amp; Wizyta</a>
+</nav>
+<!-- Editorial Action Button -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-forest text-parchment hover:bg-forest-light text-xs font-semibold uppercase tracking-widest border border-forest transition-all shadow-sm" href="#gabinet-kontakt">
+<span>Umów konsultację</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<a class="sm:hidden p-2.5 bg-forest text-parchment rounded-none" href="tel:+48510175906">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</a>
+</div>
+</div>
+</header>
+<main>
+<!-- SECTION 1: HERO MAGAZINE FEATURE (WARM HERITAGE & EDITORIAL SPREAD) -->
+<section class="relative bg-parchment pt-10 sm:pt-14 pb-16 border-b border-parchment-deep overflow-hidden">
+<!-- Subtle watermark lines -->
+<div class="absolute inset-0 pointer-events-none opacity-40 paper-texture"></div>
+<div class="max-w-[1240px] mx-auto px-4 sm:px-8 relative z-10">
+<!-- Newspaper Header Meta / Issue Style -->
+<div class="flex items-center justify-between border-b border-parchment-deep pb-3 mb-10 text-[12px] uppercase font-sans tracking-widest text-ink-muted">
+<div>Wydanie Kancelaryjne • Rocznik Praktyki Prawniczej</div>
+<div class="font-editorial italic capitalize text-sm text-forest font-semibold">Myślenice, ul. Żwirki i Wigury 10</div>
+<div class="hidden md:block">Obsługa Małopolski &amp; Sprawy Ogólnokrajowe</div>
+</div>
+<!-- 2-Column Editorial Spread Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+<!-- LEFT COLUMN: Osobiste przesłanie mecenasa, Quote, Context -->
+<div class="lg:col-span-6 flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-2 text-ochre text-xs font-bold tracking-widest uppercase mb-4">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Esej wstępny • Rzemiosło Prawa</span>
+</div>
+<h1 class="font-headline text-[38px] sm:text-[46px] lg:text-[52px] leading-[1.12] text-forest font-semibold tracking-tight mb-6">
+                „Prawo to rzemiosło ochrony człowieka”.
+              </h1>
+<div class="w-20 h-1 bg-terracotta mb-6"></div>
+<p class="dropcap font-editorial text-[20px] sm:text-[22px] leading-[1.65] text-ink-soft mb-6">
+                W kancelarii przy ulicy Żwirki i Wigury nie traktujemy spraw jak suchych sygnatur akt. Za każdym sporem majątkowym, załamaniem kontraktu czy sprawą rodzinną stoi ludzkie bezpieczeństwo, majątek gromadzony latami oraz spokój jutra. Łączymy klasyczny etos radcowski z bezkompromisową obroną interesów przed sądami powszechnymi.
+              </p>
+<p class="font-sans text-[15px] leading-relaxed text-ink-muted mb-8 border-l-2 border-forest pl-4 italic">
+                „Moim celem jest zdjęcie ciężaru procesu z Twoich ramion i zamiana chaosu przepisów w logiczną, niezłomną strategię procesową.”
+                <span class="block not-italic font-bold text-forest text-[13px] mt-2">— radca prawny Andrzej Kusiak</span>
+</p>
+</div>
+<!-- Actions and Verified Seals -->
+<div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
+<a class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-forest text-parchment hover:bg-forest-light text-sm font-semibold tracking-wide uppercase shadow-md transition-all" href="#gabinet-kontakt">
+<span class="material-symbols-outlined text-[18px]">local_cafe</span>
+<span>Skonsultuj sprawę w gabinecie</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 border-2 border-forest text-forest hover:bg-forest hover:text-parchment text-sm font-semibold tracking-wide transition-all" href="tel:+48510175906">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+<span>510 175 906</span>
+</a>
+</div>
+<!-- Traditional Heritage Seals -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-parchment-deep text-[12px]">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-ochre text-[24px]">verified</span>
+<div>
+<div class="font-bold text-forest uppercase tracking-wider text-[11px]">OIRP Kraków</div>
+<div class="text-ink-muted">Wpis radcowski</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-ochre text-[24px]">workspace_premium</span>
+<div>
+<div class="font-bold text-forest uppercase tracking-wider text-[11px]">Orły Prawa</div>
+<div class="text-ink-muted">Laureat 2024-2026</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 col-span-2 sm:col-span-1">
+<span class="material-symbols-outlined text-ochre text-[24px]">star</span>
+<div>
+<div class="font-bold text-forest uppercase tracking-wider text-[11px]">Ocena 5.0 Google</div>
+<div class="text-ink-muted">Rekomendacje klientów</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Magazynowa kompozycja gabinetu (IMAGE_12) + Archiwalna rama -->
+<div class="lg:col-span-6">
+<div class="relative p-3 sm:p-5 bg-parchment-subtle border-2 border-forest shadow-xl">
+<!-- Frame corner embellishments -->
+<div class="absolute -top-1 -left-1 w-3 h-3 border-t-2 border-l-2 border-forest bg-parchment"></div>
+<div class="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-forest bg-parchment"></div>
+<div class="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-forest bg-parchment"></div>
+<div class="absolute -bottom-1 -right-1 w-3 h-3 border-b-2 border-r-2 border-forest bg-parchment"></div>
+<!-- Main Photography Container -->
+<div class="relative overflow-hidden bg-forest aspect-[16/10] sm:aspect-[16/11]">
+<img alt="Wnętrze Kancelarii Radcy Prawnego Andrzeja Kusiaka w Myślenicach - sala konsultacyjna" class="w-full h-full object-cover object-center filter saturate-[0.9] contrast-[1.05]" src="https://lh3.googleusercontent.com/aida/AEtjO1UsrUQqBm-yA8XXJSBz5nRe3NkMh8OuR_njD3ph9y7hKz90DPQyvp-sOOYEcGNrWXjy_EsXlGdpxG-nkgvTNTRmFBTu6e_4EVkZc60eM_ci8wpMl60YN8wCrC-qxWlsfyErPeH6g1BI-LiNvEX54VfyEiNDaawxIcAUNQ7okbtDlI8WvsLYejEWzsS2A2eJYABpjWgiYPOONUz7Gj_C8r4EUj1hXunTKLsLBjWKZHdSRg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest/70 via-transparent to-transparent"></div>
+<!-- Archival Red Wax Seal Simulated Badge -->
+<div class="absolute bottom-4 right-4 bg-terracotta text-white px-3.5 py-1.5 shadow-lg border border-white/20 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">gavel</span>
+<span>Siedziba Kancelarii</span>
+</div>
+</div>
+<!-- Archival Caption / Editorial Meta beneath Photo -->
+<div class="mt-4 pt-3 border-t border-parchment-deep flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+<div class="font-editorial italic text-ink-soft text-[15px]">
+                  „Kancelaria to miejsce rzetelnego dialogu, poufności i analizy akt w atmosferze skupienia.”
+                </div>
+<div class="font-sans text-[11px] font-bold text-forest uppercase tracking-wider shrink-0 bg-parchment px-2.5 py-1 border border-parchment-deep">
+                  Myślenice • Żwirki i Wigury 10
+                </div>
+</div>
+</div>
+<!-- Mini Story Strip: Dedykowany radca a anonimowa korporacja -->
+<div class="mt-5 p-4 bg-forest text-parchment border border-forest-border flex items-start gap-4">
+<span class="material-symbols-outlined text-ochre-gold text-[28px] shrink-0 mt-0.5">account_circle</span>
+<div class="text-xs">
+<strong class="font-headline text-sm tracking-wide text-parchment block mb-1">Gwarancja bezpośredniej pracy z radcą prawnym</strong>
+<p class="text-parchment/80 leading-relaxed">
+                  Twoją sprawą od pierwszej analizy dokumentów aż po wystąpienia przed sądem zajmuje się osobiście Andrzej Kusiak – bez przekazywania teczek anonimowym stażystom.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: DOSSIER PRAWNE / "W CZYM POMAGAM" (EDITORIAL DOSSIER FORMAT) -->
+<section class="py-20 bg-parchment-subtle border-b border-parchment-deep relative" id="dossier">
+<div class="max-w-[1240px] mx-auto px-4 sm:px-8">
+<!-- Dossier Header -->
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 text-ochre text-xs font-bold tracking-widest uppercase mb-2">
+<span class="material-symbols-outlined text-[16px]">folder_special</span>
+<span>Katalog Praktyki i Reprezentacji</span>
+</div>
+<h2 class="font-headline text-[34px] sm:text-[44px] text-forest font-bold tracking-tight">
+            Dossier Prawne: Rozdziały i Sprawy
+          </h2>
+<p class="font-editorial text-[20px] text-ink-soft italic mt-3 max-w-2xl mx-auto">
+            Konkretne rozwiązania dla rodzin, właścicieli nieruchomości oraz przedsiębiorców ziemi myślenickiej i Małopolski.
+          </p>
+<div class="w-16 h-0.5 bg-forest mx-auto mt-5"></div>
+</div>
+<!-- 6 Dossier File Cards (Thematic Folders Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- DOSSIER I: Reprezentacja Sądowa & Procesy -->
+<article class="bg-parchment border-2 border-forest p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+<div class="absolute top-0 right-0 bg-forest text-parchment px-3 py-1 font-mono text-[11px] uppercase tracking-wider font-semibold">
+              Akt. 01/SĄD
+            </div>
+<div>
+<div class="text-ochre mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+<span class="font-sans text-[11px] font-bold uppercase tracking-widest">Litigacja &amp; Obrona</span>
+</div>
+<h3 class="font-headline text-[22px] font-bold text-forest mb-3 group-hover:text-terracotta transition-colors">
+                Spory Cywilne i Procesy Sądowe
+              </h3>
+<p class="font-editorial text-[17px] text-ink-soft italic mb-4 leading-snug">
+                „Sala sądowa wymaga chłodnej logiki procesowej, bezbłędnej strategii dowodowej i opanowania.”
+              </p>
+<p class="font-sans text-[13px] text-ink-muted leading-relaxed mb-5">
+                Pełne pełnomocnictwo procesowe przed Sądami Rejonowymi i Okręgowymi w Myślenicach, Krakowie i całej Polsce. Opracowywanie pozwów, apelacji, zabezpieczeń roszczeń oraz skarg kasacyjnych.
+              </p>
+<div class="border-t border-parchment-deep pt-4">
+<span class="text-[11px] uppercase font-bold text-forest tracking-wider block mb-2">Praktyka obejmuje:</span>
+<ul class="text-xs text-ink-soft space-y-1.5 font-medium">
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Spory o zapłatę, odszkodowania i zadośćuczynienia</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Wykonanie i rozwiązanie umów cywilnych</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Reprezentacja w postępowaniach odwoławczych</li>
+</ul>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-parchment-deep flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-forest group-hover:text-terracotta transition-colors" href="#gabinet-kontakt">
+<span>Zleć prowadzenie sprawy</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- DOSSIER II: Prawo Nieruchomości & Grunty -->
+<article class="bg-parchment border-2 border-forest p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+<div class="absolute top-0 right-0 bg-ochre text-parchment px-3 py-1 font-mono text-[11px] uppercase tracking-wider font-semibold">
+              Akt. 02/GRUNT
+            </div>
+<div>
+<div class="text-ochre mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">home_work</span>
+<span class="font-sans text-[11px] font-bold uppercase tracking-widest">Nieruchomości &amp; Księgi</span>
+</div>
+<h3 class="font-headline text-[22px] font-bold text-forest mb-3 group-hover:text-terracotta transition-colors">
+                Nieruchomości &amp; Stany Prawne Gruntów
+              </h3>
+<p class="font-editorial text-[17px] text-ink-soft italic mb-4 leading-snug">
+                „W Małopolsce uregulowanie praw do ziemi to często sprawa bezpieczeństwa pokoleń.”
+              </p>
+<p class="font-sans text-[13px] text-ink-muted leading-relaxed mb-5">
+                Bezpieczne transakcje zakupu i sprzedaży, audyt ksiąg wieczystych (KW), procesy o zasiedzenie, zniesienie współwłasności oraz ustanawianie służebności drogi koniecznej i przesyłu.
+              </p>
+<div class="border-t border-parchment-deep pt-4">
+<span class="text-[11px] uppercase font-bold text-forest tracking-wider block mb-2">Praktyka obejmuje:</span>
+<ul class="text-xs text-ink-soft space-y-1.5 font-medium">
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Ustalanie treści księgi wieczystej z rzeczywistością</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Postępowania o zasiedzenie i podział fizyczny</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Weryfikacja ryzyk umów deweloperskich</li>
+</ul>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-parchment-deep flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-forest group-hover:text-terracotta transition-colors" href="#gabinet-kontakt">
+<span>Audytuj nieruchomość</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- DOSSIER III: Sprawy Spadkowe & Majątkowe -->
+<article class="bg-parchment border-2 border-forest p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+<div class="absolute top-0 right-0 bg-forest text-parchment px-3 py-1 font-mono text-[11px] uppercase tracking-wider font-semibold">
+              Akt. 03/SUKCESJA
+            </div>
+<div>
+<div class="text-ochre mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">account_balance</span>
+<span class="font-sans text-[11px] font-bold uppercase tracking-widest">Spadki &amp; Majątek</span>
+</div>
+<h3 class="font-headline text-[22px] font-bold text-forest mb-3 group-hover:text-terracotta transition-colors">
+                Prawo Spadkowe &amp; Dział Spadku
+              </h3>
+<p class="font-editorial text-[17px] text-ink-soft italic mb-4 leading-snug">
+                „Skuteczna ochrona przed długami spadkowymi i sprawiedliwe rozliczenie zachowku.”
+              </p>
+<p class="font-sans text-[13px] text-ink-muted leading-relaxed mb-5">
+                Stwierdzenie nabycia spadku, dochodzenie roszczeń o zachowek, podważanie ważności testamentów oraz skomplikowane działy spadku obejmujące majątek wielopokoleniowy i gospodarstwa.
+              </p>
+<div class="border-t border-parchment-deep pt-4">
+<span class="text-[11px] uppercase font-bold text-forest tracking-wider block mb-2">Praktyka obejmuje:</span>
+<ul class="text-xs text-ink-soft space-y-1.5 font-medium">
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Procesy o zachowek i darowizny doliczane</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Sądowy i umowny dział spadku</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Odrzucenie spadku i ochrona małoletnich</li>
+</ul>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-parchment-deep flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-forest group-hover:text-terracotta transition-colors" href="#gabinet-kontakt">
+<span>Skonsultuj sukcesję</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- DOSSIER IV: Prawo Rodzinne & Rozwody -->
+<article class="bg-parchment border-2 border-forest p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+<div class="absolute top-0 right-0 bg-forest text-parchment px-3 py-1 font-mono text-[11px] uppercase tracking-wider font-semibold">
+              Akt. 04/RODZINA
+            </div>
+<div>
+<div class="text-ochre mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+<span class="font-sans text-[11px] font-bold uppercase tracking-widest">Dyskrecja &amp; Rodzina</span>
+</div>
+<h3 class="font-headline text-[22px] font-bold text-forest mb-3 group-hover:text-terracotta transition-colors">
+                Rozwody i Podział Majątku Wspólnego
+              </h3>
+<p class="font-editorial text-[17px] text-ink-soft italic mb-4 leading-snug">
+                „Ochrona godności, zabezpieczenie dzieci i precyzyjny bilans dorobku małżeńskiego.”
+              </p>
+<p class="font-sans text-[13px] text-ink-muted leading-relaxed mb-5">
+                Prowadzenie spraw rozwodowych z orzekaniem lub bez orzekania o winie, zabezpieczenie kontaktów z dziećmi, alimenty oraz kompleksowy podział wspólnego majątku po ustaniu wspólności majątkowej.
+              </p>
+<div class="border-t border-parchment-deep pt-4">
+<span class="text-[11px] uppercase font-bold text-forest tracking-wider block mb-2">Praktyka obejmuje:</span>
+<ul class="text-xs text-ink-soft space-y-1.5 font-medium">
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Pozwy rozwodowe i reprezentacja na rozprawie</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Rozliczenie nakładów z majątku osobistego na wspólny</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Porozumienia rodzicielskie i opieka naprzemienna</li>
+</ul>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-parchment-deep flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-forest group-hover:text-terracotta transition-colors" href="#gabinet-kontakt">
+<span>Dyskretna konsultacja</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- DOSSIER V: Obsługa Biznesu & Kontrakty Handlowe -->
+<article class="bg-parchment border-2 border-forest p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+<div class="absolute top-0 right-0 bg-forest text-parchment px-3 py-1 font-mono text-[11px] uppercase tracking-wider font-semibold">
+              Akt. 05/B2B
+            </div>
+<div>
+<div class="text-ochre mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">corporate_fare</span>
+<span class="font-sans text-[11px] font-bold uppercase tracking-widest">Kontrakty &amp; Spółki</span>
+</div>
+<h3 class="font-headline text-[22px] font-bold text-forest mb-3 group-hover:text-terracotta transition-colors">
+                Obsługa Firm, Kontrakty i Spółki
+              </h3>
+<p class="font-editorial text-[17px] text-ink-soft italic mb-4 leading-snug">
+                „Szczelna umowa jest tańsza niż wieloletni proces gospodarczy z kontrahentem.”
+              </p>
+<p class="font-sans text-[13px] text-ink-muted leading-relaxed mb-5">
+                Stała oraz doraźna pomoc prawna dla przedsiębiorców: konstruowanie umów B2B, audyt ryzyk prawnych, zakładanie i przekształcanie spółek w KRS oraz negocjacje z kluczowymi partnerami.
+              </p>
+<div class="border-t border-parchment-deep pt-4">
+<span class="text-[11px] uppercase font-bold text-forest tracking-wider block mb-2">Praktyka obejmuje:</span>
+<ul class="text-xs text-ink-soft space-y-1.5 font-medium">
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Weryfikacja kar umownych i klauzul odstąpienia</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Sporządzanie regulaminów i dokumentacji RODO</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Obsługa korporacyjna zgromadzeń wspólników</li>
+</ul>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-parchment-deep flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-forest group-hover:text-terracotta transition-colors" href="#gabinet-kontakt">
+<span>Zleć audyt kontraktu</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- DOSSIER VI: Windykacja i Odzyskiwanie Środków -->
+<article class="bg-parchment border-2 border-forest p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+<div class="absolute top-0 right-0 bg-forest text-parchment px-3 py-1 font-mono text-[11px] uppercase tracking-wider font-semibold">
+              Akt. 06/EGZEKUCJA
+            </div>
+<div>
+<div class="text-ochre mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+<span class="font-sans text-[11px] font-bold uppercase tracking-widest">Pieniądz &amp; Wierzytelności</span>
+</div>
+<h3 class="font-headline text-[22px] font-bold text-forest mb-3 group-hover:text-terracotta transition-colors">
+                Windykacja i Zabezpieczenie Roszczeń
+              </h3>
+<p class="font-editorial text-[17px] text-ink-soft italic mb-4 leading-snug">
+                „Szybkość działania decyduje, czy dłużnik zdąży ukryć swój majątek.”
+              </p>
+<p class="font-sans text-[13px] text-ink-muted leading-relaxed mb-5">
+                Legalne, stanowcze i metodyczne odzyskiwanie należności od zatorów płatniczych po orzeczenia egzekucyjne. Pozwy w postępowaniu nakazowym i upominawczym oraz ścisły nadzór nad komornikiem.
+              </p>
+<div class="border-t border-parchment-deep pt-4">
+<span class="text-[11px] uppercase font-bold text-forest tracking-wider block mb-2">Praktyka obejmuje:</span>
+<ul class="text-xs text-ink-soft space-y-1.5 font-medium">
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Przedsądowe wezwania z rygorem procesowym</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Zabezpieczenie majątku dłużnika na rachunkach</li>
+<li class="flex items-center gap-2"><span class="text-ochre font-bold">•</span> Skarga pauliańska przeciwko fikcyjnym darowiznom</li>
+</ul>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-parchment-deep flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-forest group-hover:text-terracotta transition-colors" href="#gabinet-kontakt">
+<span>Odzyskaj należność</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- SECTION 3: KRONIKA & GAZETA SPRAW (Z SALI SĄDOWEJ I GABINETU) -->
+<section class="py-20 bg-parchment border-b border-parchment-deep" id="gazeta-spraw">
+<div class="max-w-[1240px] mx-auto px-4 sm:px-8">
+<!-- Section Intro in Newspaper Column Style -->
+<div class="border-b-2 border-forest pb-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="text-ochre text-xs font-bold uppercase tracking-widest block mb-1">Kronika Praktyki Adwokacko-Radcowskiej</span>
+<h2 class="font-headline text-[32px] sm:text-[40px] text-forest font-bold tracking-tight">
+              Z Sali Sądowej i Gabinetu
+            </h2>
+<p class="font-editorial text-[18px] text-ink-soft italic mt-1">
+              Przegląd typowych sytuacji procesowych rozwiązywanych przez kancelarię w rejonie Myślenic i Krakowa.
+            </p>
+</div>
+<div class="font-sans text-xs text-ink-muted max-w-xs text-right hidden md:block">
+            „Precedensy, wiedza praktyczna i metodyka dowodowa w służbie praworządności.”
+          </div>
+</div>
+<!-- 3-Column Newspaper Article Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Column Case 1 -->
+<div class="border-r border-parchment-deep pr-0 md:pr-8 flex flex-col justify-between">
+<div>
+<span class="text-[11px] font-bold uppercase tracking-widest text-terracotta block mb-2">Sprawa I • Spór Nieruchomościowy</span>
+<h4 class="font-headline text-[20px] font-bold text-forest mb-3 leading-snug">
+                Zasiedzenie działki i nieuregulowane granice z lat 70.
+              </h4>
+<p class="font-editorial text-[16px] text-ink-soft leading-relaxed mb-4">
+                Wielopokoleniowy spór sąsiedzki o pas gruntu o szerokości 4 metrów. Brak wpisu w księdze wieczystej i sprzeczne mapy geodezyjne.
+              </p>
+<div class="p-3.5 bg-parchment-subtle border-l-2 border-forest text-xs text-ink mb-4">
+<strong>Ścieżka działania:</strong> Kwerenda w archiwum ksiąg dawnych, powołanie biegłego geodety oraz przesłuchanie świadków na okoliczność samoistnego posiadania przez ponad 30 lat.
+              </div>
+<p class="font-sans text-xs text-ink-muted leading-relaxed">
+<strong>Rezultat:</strong> Prawomocne postanowienie sądu stwierdzające nabycie własności przez zasiedzenie i wpis do KW bez eskalacji konfliktu w sąsiedztwie.
+              </p>
+</div>
+<div class="pt-4 mt-6 border-t border-parchment-deep text-[11px] font-semibold text-forest uppercase tracking-wider">
+              Sygnatura lokalna • Sąd Rejonowy w Myślenicach
+            </div>
+</div>
+<!-- Column Case 2 -->
+<div class="border-r border-parchment-deep pr-0 md:pr-8 flex flex-col justify-between">
+<div>
+<span class="text-[11px] font-bold uppercase tracking-widest text-terracotta block mb-2">Sprawa II • Spór Gospodarczy B2B</span>
+<h4 class="font-headline text-[20px] font-bold text-forest mb-3 leading-snug">
+                Odmowa zapłaty za roboty budowlane z zarzutem wad pozornych
+              </h4>
+<p class="font-editorial text-[16px] text-ink-soft leading-relaxed mb-4">
+                Inwestor wstrzymał wypłatę 180 000 zł podwykonawcy, naliczając niezasadne kary umowne za rzekome opóźnienia w realizacji etapu.
+              </p>
+<div class="p-3.5 bg-parchment-subtle border-l-2 border-forest text-xs text-ink mb-4">
+<strong>Ścieżka działania:</strong> Błyskawiczny wniosek o zabezpieczenie dowodów z opinii biegłego jeszcze przed rozpoczęciem tynków oraz weryfikacja wpisów w dzienniku budowy.
+              </div>
+<p class="font-sans text-xs text-ink-muted leading-relaxed">
+<strong>Rezultat:</strong> Zawarcie ugody mediacyjnej i natychmiastowa wypłata całości wynagrodzenia wraz z odsetkami handlowymi.
+              </p>
+</div>
+<div class="pt-4 mt-6 border-t border-parchment-deep text-[11px] font-semibold text-forest uppercase tracking-wider">
+              Wydział Gospodarczy • Kraków
+            </div>
+</div>
+<!-- Column Case 3 -->
+<div class="flex flex-col justify-between">
+<div>
+<span class="text-[11px] font-bold uppercase tracking-widest text-terracotta block mb-2">Sprawa III • Majątek i Rodzina</span>
+<h4 class="font-headline text-[20px] font-bold text-forest mb-3 leading-snug">
+                Ukrywanie dochodów z działalności a roszczenie o zachowek
+              </h4>
+<p class="font-editorial text-[16px] text-ink-soft leading-relaxed mb-4">
+                Spadkobierca testamentowy twierdził, że majątek spadkowy jest zerowy ze względu na rzekome darowizny wykonane przed śmiercią spadkodawcy.
+              </p>
+<div class="p-3.5 bg-parchment-subtle border-l-2 border-forest text-xs text-ink mb-4">
+<strong>Ścieżka działania:</strong> Zobowiązanie instytucji bankowych do ujawnienia historii rachunków i zrekonstruowanie substratu zachowku z uwzględnieniem wartości rynkowej darowanych nieruchomości.
+              </div>
+<p class="font-sans text-xs text-ink-muted leading-relaxed">
+<strong>Rezultat:</strong> Wygrana przed sądem II instancji i zasądzenie pełnego należnego zachowku na rzecz pominiętego zstępnego.
+              </p>
+</div>
+<div class="pt-4 mt-6 border-t border-parchment-deep text-[11px] font-semibold text-forest uppercase tracking-wider">
+              Sąd Okręgowy • Wydział Cywilny
+            </div>
+</div>
+</div>
+<!-- Archival Quote Banner -->
+<div class="mt-14 bg-forest text-parchment p-8 border-2 border-forest flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-5">
+<span class="material-symbols-outlined text-ochre-gold text-[38px] shrink-0">balance</span>
+<div>
+<h3 class="font-headline text-[20px] font-semibold tracking-wide">Szukasz rzetelnej oceny szans procesowych?</h3>
+<p class="font-editorial text-[17px] text-parchment/80 italic mt-0.5">
+                Nie podejmuj pochopnych kroków bez analizy dokumentów źródłowych.
+              </p>
+</div>
+</div>
+<a class="px-6 py-3 bg-ochre hover:bg-ochre-gold text-parchment text-xs font-bold tracking-widest uppercase transition-colors shrink-0" href="#gabinet-kontakt">
+            Przedstaw swój problem radcy
+          </a>
+</div>
+</div>
+</section>
+<!-- SECTION 4: METODA RZEMIOSŁA & ETYKA (PROCES WSPÓŁPRACY) -->
+<section class="py-20 bg-parchment-subtle border-b border-parchment-deep" id="metoda">
+<div class="max-w-[1240px] mx-auto px-4 sm:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-ochre text-xs font-bold uppercase tracking-widest block mb-2">Kodeks &amp; Metodyka Pracy</span>
+<h2 class="font-headline text-[34px] sm:text-[42px] text-forest font-bold tracking-tight">
+            Trzy Filarowe Etapy Pomocy Prawnej
+          </h2>
+<p class="font-editorial text-[19px] text-ink-soft italic mt-2">
+            Od pierwszego kontaktu po ostateczne wykonanie orzeczenia sądu.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Etap 1 -->
+<div class="bg-parchment p-8 border border-parchment-deep shadow-sm relative">
+<div class="w-12 h-12 bg-forest text-parchment font-headline font-bold text-xl flex items-center justify-center mb-6">
+              I
+            </div>
+<h3 class="font-headline text-[20px] font-bold text-forest mb-3">
+              Rozpoznanie i Audyt Akt
+            </h3>
+<p class="font-sans text-[14px] text-ink-muted leading-relaxed mb-4">
+              Podczas pierwszego spotkania w gabinecie lub rozmowy telefonicznej szczegółowo analizuję zebrane dokumenty, umowy, wezwania czy korespondencję. Ustalamy stan faktyczny i sprawdzamy terminy zawite.
+            </p>
+<div class="pt-4 border-t border-parchment-deep text-xs font-semibold text-ochre uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+<span>Diagnoza ryzyka i szans</span>
+</div>
+</div>
+<!-- Etap 2 -->
+<div class="bg-parchment p-8 border border-parchment-deep shadow-sm relative">
+<div class="w-12 h-12 bg-forest text-parchment font-headline font-bold text-xl flex items-center justify-center mb-6">
+              II
+            </div>
+<h3 class="font-headline text-[20px] font-bold text-forest mb-3">
+              Strategia i Konstrukcja Pism
+            </h3>
+<p class="font-sans text-[14px] text-ink-muted leading-relaxed mb-4">
+              Opracowuję precyzyjny plan procesowy. Każde pismo, pozew czy wniosek dowodowy formułowane są z dbałością o precyzję prawną, orzecznictwo Sądu Najwyższego oraz czytelność dla sędziego.
+            </p>
+<div class="pt-4 border-t border-parchment-deep text-xs font-semibold text-ochre uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Bezkompromisowa precyzja</span>
+</div>
+</div>
+<!-- Etap 3 -->
+<div class="bg-parchment p-8 border border-parchment-deep shadow-sm relative">
+<div class="w-12 h-12 bg-forest text-parchment font-headline font-bold text-xl flex items-center justify-center mb-6">
+              III
+            </div>
+<h3 class="font-headline text-[20px] font-bold text-forest mb-3">
+              Osobista Reprezentacja i Nadzór
+            </h3>
+<p class="font-sans text-[14px] text-ink-muted leading-relaxed mb-4">
+              Staję u Twojego boku przed obliczem sądu, urzędów i komorników. Otrzymujesz bieżące raporty po każdej rozprawie, a ostateczne orzeczenie doprowadzam do faktycznego wyegzekwowania.
+            </p>
+<div class="pt-4 border-t border-parchment-deep text-xs font-semibold text-ochre uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">shield</span>
+<span>Spokój i pełna ochrona</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: ZAUFANIE I ETYKA (REKOMENDACJE SPOŁECZNOŚCI) -->
+<section class="py-20 bg-parchment border-b border-parchment-deep" id="referencje">
+<div class="max-w-[1240px] mx-auto px-4 sm:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+<div class="lg:col-span-8">
+<span class="text-ochre text-xs font-bold uppercase tracking-widest block mb-2">Opinie i Rzetelność Zawodowa</span>
+<h2 class="font-headline text-[34px] sm:text-[42px] text-forest font-bold tracking-tight">
+              Świadectwa Klientów z Myślenic i Małopolski
+            </h2>
+<p class="font-editorial text-[20px] text-ink-soft italic mt-2">
+              Zaufanie buduje się latami – uczciwą oceną szans i dyskrecją zawodową.
+            </p>
+</div>
+<div class="lg:col-span-4 flex items-center justify-start lg:justify-end gap-6">
+<div class="p-4 bg-parchment-subtle border-2 border-forest text-center min-w-[140px]">
+<span class="font-headline text-3xl font-bold text-forest block">5.0 / 5</span>
+<span class="text-ochre text-sm block">★★★★★</span>
+<span class="text-[11px] font-sans text-ink-muted uppercase tracking-wider">15 Opinii Google</span>
+</div>
+<div class="p-4 bg-parchment-subtle border-2 border-forest text-center min-w-[140px]">
+<span class="font-headline text-3xl font-bold text-ochre block">8.9</span>
+<span class="text-[12px] font-bold text-forest block mt-1">Orły Prawa</span>
+<span class="text-[11px] font-sans text-ink-muted uppercase tracking-wider">2024 • 2025 • 2026</span>
+</div>
+</div>
+</div>
+<!-- Testimonial Cards Layout (Letter Format) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-parchment-subtle p-7 border-t-4 border-forest border-x border-b border-parchment-deep flex flex-col justify-between">
+<div>
+<div class="text-ochre text-sm mb-3">★★★★★</div>
+<p class="font-editorial text-[18px] text-ink italic leading-relaxed mb-6">
+                „Do kancelarii trafiłem z bardzo skomplikowaną sprawą podziału majątku po rozwodzie. Pan Mecenas Andrzej Kusiak wykazał się niesamowitym spokojem, znajomością przepisów i opanowaniem na sali rozpraw. Sprawa zakończyła się pełnym sukcesem.”
+              </p>
+</div>
+<div class="pt-4 border-t border-parchment-deep">
+<span class="font-headline font-bold text-forest text-sm block">Tomasz M.</span>
+<span class="text-xs text-ink-muted">Sprawa majątkowa • Myślenice</span>
+</div>
+</div>
+<div class="bg-parchment-subtle p-7 border-t-4 border-ochre border-x border-b border-parchment-deep flex flex-col justify-between">
+<div>
+<div class="text-ochre text-sm mb-3">★★★★★</div>
+<p class="font-editorial text-[18px] text-ink italic leading-relaxed mb-6">
+                „Wzorowa obsługa naszej spółki w zakresie weryfikacji umów B2B oraz prawa pracy. Pan Mecenas zawsze odbiera telefon lub oddzwania tego samego dnia, co w biznesie jest bezcenne. Zero korporacyjnego żargonu – same konkrety.”
+              </p>
+</div>
+<div class="pt-4 border-t border-parchment-deep">
+<span class="font-headline font-bold text-forest text-sm block">Katarzyna W.</span>
+<span class="text-xs text-ink-muted">Obsługa przedsiębiorstwa • Powiat Myślenicki</span>
+</div>
+</div>
+<div class="bg-parchment-subtle p-7 border-t-4 border-terracotta border-x border-b border-parchment-deep flex flex-col justify-between">
+<div>
+<div class="text-ochre text-sm mb-3">★★★★★</div>
+<p class="font-editorial text-[18px] text-ink italic leading-relaxed mb-6">
+                „Skuteczna pomoc w uregulowaniu zawiłej księgi wieczystej działki i drogi dojazdowej. Poprzedni prawnik rozkładał ręce, mecenas Kusiak znalazł właściwą ścieżkę procesową w archiwach i doprowadził sprawę do końca.”
+              </p>
+</div>
+<div class="pt-4 border-t border-parchment-deep">
+<span class="font-headline font-bold text-forest text-sm block">Janusz K.</span>
+<span class="text-xs text-ink-muted">Prawo nieruchomości • Dobczyce</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: GABINET & ZAPROSZENIE NA SPOTKANIE (KONTAKT + MAPA + KSIĘGA ZAPYTAŃ) -->
+<section class="py-20 bg-parchment relative" id="gabinet-kontakt">
+<div class="max-w-[1240px] mx-auto px-4 sm:px-8">
+<!-- Warm Invitation Header -->
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 text-ochre text-xs font-bold tracking-widest uppercase mb-2">
+<span class="material-symbols-outlined text-[18px]">meeting_room</span>
+<span>Drzwi Kancelarii są otwarte</span>
+</div>
+<h2 class="font-headline text-[34px] sm:text-[46px] text-forest font-bold tracking-tight">
+            Zapraszam na rozmowę przy kawie w Myślenicach
+          </h2>
+<p class="font-editorial text-[20px] text-ink-soft italic mt-2">
+            ul. Żwirki i Wigury 10 • Centrum miasta, 3 minuty od Rynku
+          </p>
+<div class="w-16 h-0.5 bg-forest mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- LEFT COLUMN: NAP, Lokalizacja, Kawa, Ilustrowana mapa -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Wizytówka Kancelaryjna (Letterpress Card Style) -->
+<div class="bg-forest text-parchment p-8 border-2 border-forest shadow-xl relative">
+<span class="text-ochre-gold text-[11px] font-sans font-bold uppercase tracking-widest block mb-2">Kancelaria Radcy Prawnego</span>
+<h3 class="font-headline text-2xl font-bold tracking-tight text-parchment mb-4">
+                Andrzej Kusiak
+              </h3>
+<div class="w-12 h-0.5 bg-ochre mb-6"></div>
+<div class="space-y-5 text-sm">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-ochre-gold text-[22px] shrink-0 mt-0.5">location_on</span>
+<div>
+<strong class="font-semibold block text-parchment">Siedziba stacjonarna:</strong>
+<span class="text-parchment/80 block mt-0.5">ul. Żwirki i Wigury 10, 32-400 Myślenice</span>
+<span class="text-xs text-ochre-gold block mt-0.5 font-medium">Dogodne miejsca parkingowe tuż przed wejściem</span>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-ochre-gold text-[22px] shrink-0 mt-0.5">call</span>
+<div>
+<strong class="font-semibold block text-parchment">Telefon bezpośredni:</strong>
+<a class="font-headline text-xl text-ochre-gold hover:text-white font-bold block mt-0.5 transition-colors" href="tel:+48510175906">
+                      +48 510 175 906
+                    </a>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-ochre-gold text-[22px] shrink-0 mt-0.5">schedule</span>
+<div>
+<strong class="font-semibold block text-parchment">Terminy spotkań:</strong>
+<span class="text-parchment/80 block mt-0.5">
+                      Konsultacje po wcześniejszym uzgodnieniu telefonicznym lub formularzem.
+                    </span>
+<span class="text-xs text-parchment/60 block mt-0.5">Możliwość spotkań także w Krakowie lub w trybie telekonferencji.</span>
+</div>
+</div>
+</div>
+<!-- Przycisk bezpośredniego połączenia -->
+<div class="mt-8 pt-6 border-t border-forest-border">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-ochre hover:bg-ochre-gold text-parchment py-3 px-4 font-semibold text-xs uppercase tracking-widest transition-all" href="tel:+48510175906">
+<span class="material-symbols-outlined text-[18px]">phone_enabled</span>
+<span>Zadzwoń do mecenasa: 510 175 906</span>
+</a>
+</div>
+</div>
+<!-- Stylizowana Karta Mapy Myślenic -->
+<div class="bg-parchment-subtle border-2 border-forest p-4 shadow-md">
+<div class="flex items-center justify-between border-b border-parchment-deep pb-3 mb-3 text-xs">
+<div class="flex items-center gap-2 font-bold text-forest uppercase tracking-wider">
+<span class="material-symbols-outlined text-ochre text-[18px]">near_me</span>
+<span>Plan dojazdu do kancelarii</span>
+</div>
+<a class="text-forest hover:text-ochre text-[11px] font-semibold underline" href="https://maps.google.com/?q=Żwirki+i+Wigury+10,+Myślenice" rel="noopener noreferrer" target="_blank">
+                  Google Maps →
+                </a>
+</div>
+<!-- Wektorowa stylizacja mapy lokalnej (Żwirki i Wigury & Rynek) -->
+<div class="relative h-48 bg-[#ece5d8] border border-parchment-deep overflow-hidden flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full opacity-80" preserveaspectratio="none" viewbox="0 0 400 200">
+<rect fill="#f2ecdf" height="200" width="400"></rect>
+<!-- Tereny zielone wokół Raby i parki -->
+<path d="M 0,30 Q 100,50 150,10 Q 220,-10 260,30 L 220,70 L 40,60 Z" fill="#d9e3d4"></path>
+<path d="M 280,120 Q 330,150 380,110 L 400,180 L 290,190 Z" fill="#d9e3d4"></path>
+<!-- Rzeka Raba -->
+<path d="M 390,0 Q 340,90 310,130 T 280,200" fill="none" stroke="#bdd3e2" stroke-width="20"></path>
+<!-- Siatka ulic Myślenic -->
+<path d="M 0,100 L 400,120" stroke="#ffffff" stroke-width="14"></path>
+<path d="M 0,100 L 400,120" stroke="#b45309" stroke-width="5"></path>
+<path d="M 160,0 L 200,200" stroke="#ffffff" stroke-width="12"></path>
+<path d="M 60,0 L 80,200" stroke="#ffffff" stroke-width="6"></path>
+<path d="M 260,0 L 270,200" stroke="#ffffff" stroke-width="6"></path>
+<!-- Rynek w Myślenicach oznaczenie -->
+<rect fill="#e2d6c1" height="40" stroke="#b45309" stroke-width="1.5" width="45" x="70" y="80"></rect>
+<text fill="#0d2b22" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="bold" x="75" y="103">RYNEK</text>
+<!-- Żwirki i Wigury ulica -->
+<text fill="#4a3525" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="bold" x="180" y="93">ŻWIRKI I WIGURY 10</text>
+</svg>
+<!-- Pinezka / Pieczęć Kancelarii na mapie -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-9 h-9 rounded-full bg-forest text-parchment border-2 border-ochre flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[20px]">balance</span>
+</div>
+<div class="bg-forest text-parchment text-[10px] font-bold px-2 py-0.5 border border-ochre mt-1 uppercase tracking-wider">
+                    Kancelaria Radcowska
+                  </div>
+</div>
+</div>
+<div class="mt-3 text-[11px] text-ink-muted flex items-center gap-2">
+<span class="material-symbols-outlined text-ochre text-[16px] shrink-0">local_parking</span>
+<span>Parking bezpośrednio przy ulicy Żwirki i Wigury lub przy myślenickim Rynku (3 minuty pieszo).</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Tradycyjna Księga Zapytań (Formularz w stylu Dossier) -->
+<div class="lg:col-span-7 bg-parchment-subtle p-8 sm:p-10 border-2 border-forest shadow-xl relative">
+<div class="border-b border-parchment-deep pb-4 mb-6">
+<span class="text-ochre text-[11px] font-sans font-bold uppercase tracking-widest block mb-1">
+                Księga Zapytań Kancelaryjnych
+              </span>
+<h3 class="font-headline text-[26px] sm:text-[30px] font-bold text-forest tracking-tight">
+                Napisz do radcy prawnego
+              </h3>
+<p class="font-editorial text-[17px] text-ink-soft italic mt-1">
+                Wstępny opis sprawy nie rodzi zobowiązań finansowych. Odpowiedź otrzymasz w ciągu 24 godzin roboczych.
+              </p>
+</div>
+<form class="space-y-5" onsubmit="event.preventDefault(); document.getElementById('form-confirmation').classList.remove('hidden'); this.reset();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-forest mb-1.5" for="name">
+                    Imię i Nazwisko *
+                  </label>
+<input class="w-full px-4 py-3 bg-parchment border-2 border-parchment-deep focus:border-forest focus:ring-0 text-ink text-sm transition-all" id="name" placeholder="np. Jan Kowalski" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-forest mb-1.5" for="phone">
+                    Numer Telefonu *
+                  </label>
+<input class="w-full px-4 py-3 bg-parchment border-2 border-parchment-deep focus:border-forest focus:ring-0 text-ink text-sm transition-all" id="phone" placeholder="np. 500 000 000" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-forest mb-1.5" for="email">
+                  Adres E-mail (do korespondencji)
+                </label>
+<input class="w-full px-4 py-3 bg-parchment border-2 border-parchment-deep focus:border-forest focus:ring-0 text-ink text-sm transition-all" id="email" placeholder="np. jan.kowalski@poczta.pl" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-forest mb-1.5" for="topic">
+                  Kategoria sprawy / Zakres problemu
+                </label>
+<select class="w-full px-4 py-3 bg-parchment border-2 border-parchment-deep focus:border-forest focus:ring-0 text-ink text-sm transition-all" id="topic">
+<option>Spór sądowy / Sprawa cywilna</option>
+<option>Nieruchomości, działka, księga wieczysta (KW)</option>
+<option>Spadek, zachowek, dział majątku</option>
+<option>Rozwód, podział dorobku małżeńskiego</option>
+<option>Umowy handlowe, obsługa przedsiębiorstwa</option>
+<option>Windykacja należności</option>
+<option>Inna sprawa prawna</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-forest mb-1.5" for="message">
+                  Zwięzły zarys problemu faktycznego *
+                </label>
+<textarea class="w-full px-4 py-3 bg-parchment border-2 border-parchment-deep focus:border-forest focus:ring-0 text-ink text-sm transition-all resize-none" id="message" placeholder="Wskaż proszę krótko istotę sprawy, czy toczy się już postępowanie w sądzie, daty kluczowych pism..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-start gap-3 pt-2">
+<input class="mt-1 w-4 h-4 rounded-none border-forest text-forest focus:ring-0 cursor-pointer" id="consent" required="" type="checkbox"/>
+<label class="text-xs text-ink-muted leading-relaxed cursor-pointer" for="consent">
+                  Wyrażam zgodę na przetwarzanie podanych danych w celu kontaktu zwrotnego i umówienia terminu konsultacji. Kancelaria gwarantuje bezwzględną tajemnicę radcowską.
+                </label>
+</div>
+<div class="pt-3">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-forest text-parchment hover:bg-forest-light text-xs font-bold uppercase tracking-widest shadow-md transition-all" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Przekaż wiadomość do kancelarii</span>
+</button>
+</div>
+<!-- Potwierdzenie wysłania -->
+<div class="hidden p-4 bg-parchment border-2 border-forest text-forest text-sm flex items-center gap-3" id="form-confirmation">
+<span class="material-symbols-outlined text-ochre text-[24px]">verified</span>
+<div>
+<strong>Wiadomość została zarejestrowana w sekretariacie.</strong>
+<div class="text-xs text-ink-muted mt-0.5">Mecenas Andrzej Kusiak zapozna się ze zgłoszeniem i skontaktuje się telefonicznie.</div>
+</div>
+</div>
+</form>
+<div class="mt-6 pt-4 border-t border-parchment-deep text-[11px] text-ink-muted flex items-center gap-2 italic">
+<span class="material-symbols-outlined text-[15px] text-forest">lock</span>
+<span>Wszystkie dane są chronione ustawową tajemnicą zawodową radców prawnych (art. 3 ustawy o radcach prawnych).</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER: MAGAZYNOWA STOPKA TRADYCJI I ODPOWIEDZIALNOŚCI PRAWNEJ -->
+<footer class="bg-forest text-parchment border-t-4 border-ochre pt-16 pb-12">
+<div class="max-w-[1240px] mx-auto px-4 sm:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-forest-border">
+<!-- Col 1: Notka Radcy -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-9 h-9 border border-ochre bg-parchment text-forest flex items-center justify-center font-headline font-bold">
+              AK
+            </div>
+<span class="font-headline text-lg font-bold text-parchment">Kancelaria Radcy Prawnego</span>
+</div>
+<p class="font-editorial text-[17px] text-parchment/80 italic leading-relaxed">
+            Andrzej Kusiak – radca prawny wpisany na oficjalną listę Okręgowej Izby Radców Prawnych w Krakowie.
+          </p>
+<div class="text-xs text-ochre-gold font-sans uppercase tracking-wider font-semibold mt-2">
+            Myślenice • Żwirki i Wigury 10
+          </div>
+</div>
+<!-- Col 2: Dossier Praktyki -->
+<div>
+<h4 class="font-headline text-base font-bold text-parchment uppercase tracking-wider mb-4 border-b border-forest-border pb-1">
+            Główne Ścieżki Prawa
+          </h4>
+<ul class="space-y-2 text-xs text-parchment/70 font-sans">
+<li><a class="hover:text-parchment transition-colors" href="#dossier">Spory Sądowe i Cywilne</a></li>
+<li><a class="hover:text-parchment transition-colors" href="#dossier">Nieruchomości i Księgi Wieczyste</a></li>
+<li><a class="hover:text-parchment transition-colors" href="#dossier">Spadki, Testamenty i Zachowki</a></li>
+<li><a class="hover:text-parchment transition-colors" href="#dossier">Rozwody i Podział Majątku</a></li>
+<li><a class="hover:text-parchment transition-colors" href="#dossier">Umowy B2B i Stała Obsługa Firm</a></li>
+</ul>
+</div>
+<!-- Col 3: Kontakt NAP -->
+<div>
+<h4 class="font-headline text-base font-bold text-parchment uppercase tracking-wider mb-4 border-b border-forest-border pb-1">
+            Dane Adresowe
+          </h4>
+<div class="space-y-2 text-xs text-parchment/80 font-sans">
+<p class="font-bold text-parchment">Kancelaria Radcy Prawnego Andrzej Kusiak</p>
+<p>ul. Żwirki i Wigury 10</p>
+<p>32-400 Myślenice</p>
+<p class="pt-2">
+<a class="text-ochre-gold hover:text-white font-bold text-sm block" href="tel:+48510175906">
+                tel. +48 510 175 906
+              </a>
+</p>
+</div>
+</div>
+<!-- Col 4: Etyka & Standardy -->
+<div>
+<h4 class="font-headline text-base font-bold text-parchment uppercase tracking-wider mb-4 border-b border-forest-border pb-1">
+            Etyka i Certyfikaty
+          </h4>
+<p class="text-xs text-parchment/70 leading-relaxed mb-3">
+            Zawód wykonywany z poszanowaniem Kodeksu Etyki Radcy Prawnego oraz ustawy o radcach prawnych z dnia 6 lipca 1982 r.
+          </p>
+<div class="inline-flex items-center gap-2 text-xs text-ochre-gold border border-forest-border px-3 py-1.5 bg-forest-light">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Ubezpieczenie OC Radcy Prawnego</span>
+</div>
+</div>
+</div>
+<!-- Copyright Bottom Bar -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-parchment/60 font-sans">
+<p>© 2025 Kancelaria Radcy Prawnego Andrzej Kusiak. Wszelkie prawa zastrzeżone.</p>
+<p class="font-editorial italic text-sm text-parchment/80">Wydanie Magazynowe Kancelarii • Myślenice, Małopolska</p>
+</div>
+</div>
+<!-- Mobile Sticky Quick Call Button -->
+<div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-forest p-3 border-t-2 border-ochre shadow-2xl">
+<a class="flex items-center justify-center gap-2 bg-ochre text-parchment py-3 px-4 font-bold text-xs uppercase tracking-widest" href="tel:+48510175906">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Zadzwoń do mecenasa: 510 175 906</span>
+</a>
+</div>
+</footer>
+</body></html>

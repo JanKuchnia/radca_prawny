@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "/home/jankuchnia/Desktop/radca_prawny/index.html"
+        ],
+        "createdAt": "2026-11-02T10:37:40.558Z",
+        "reason": "assistant: display h1/h2 at 0.92-1.05 leading is intentional large-type setting (design-taste-frontend 0.85-1.05); not user confirmed"
+      }
+    ]
+  }
+}
