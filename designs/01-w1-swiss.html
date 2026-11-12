@@ -54,7 +54,7 @@
         linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
     }
   </style>
-</head>
+<style>@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style></head>
 <body class="font-sans antialiased text-brand-ink bg-white selection:bg-brand-cobalt selection:text-white">
 <!-- TOP STATUS BAR / OIRP PROTOCOL -->
 <aside class="w-full bg-brand-ink text-white border-b border-brand-graphite font-mono text-[11px] tracking-wider uppercase py-2 px-4 sm:px-8">
@@ -72,7 +72,7 @@
 </div>
 </aside>
 <!-- SWISS GRID NAVIGATION -->
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-ink/10 transition-all">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-ink/10 transition">
 <div class="max-w-[1440px] mx-auto grid grid-cols-12 items-stretch h-20">
 <!-- Brand Anchor -->
 <div class="col-span-8 lg:col-span-4 border-r border-brand-ink/10 flex items-center px-4 sm:px-8">
@@ -102,10 +102,10 @@
 </nav>
 <!-- Direct Hotline Action -->
 <div class="col-span-4 lg:col-span-3 flex items-center justify-end px-4 sm:px-6">
-<a class="w-full h-11 bg-brand-ink hover:bg-brand-cobalt text-white flex items-center justify-between px-4 transition-all duration-200" href="tel:+48510175906">
+<a class="w-full h-11 bg-brand-ink hover:bg-brand-cobalt text-white flex items-center justify-between px-4 transition duration-200" href="tel:+48510175906">
 <span class="font-mono text-xs uppercase tracking-wider font-semibold">HOTLINE</span>
 <span class="font-bold text-xs sm:text-sm tracking-tight">+48 510 175 906</span>
-<span class="material-symbols-outlined text-[16px] hidden sm:block">arrow_forward</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px] hidden sm:block">arrow_forward</span>
 </a>
 </div>
 </div>
@@ -180,10 +180,10 @@
 <div class="flex flex-col gap-3">
 <a class="w-full bg-brand-ink hover:bg-brand-cobalt text-white font-mono text-xs uppercase tracking-wider py-3.5 px-4 text-center font-bold transition-colors flex items-center justify-center gap-2" href="#terminal">
 <span>ZŁÓŻ KARTĘ SPRAWY</span>
-<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">terminal</span>
 </a>
 <a class="w-full bg-white hover:bg-brand-concrete border border-brand-ink text-brand-ink font-mono text-xs uppercase tracking-wider py-3.5 px-4 text-center font-bold transition-colors flex items-center justify-center gap-2" href="tel:+48510175906">
-<span class="material-symbols-outlined text-[16px]">call</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">call</span>
 <span>SZYBKA KONSULTACJA: 510 175 906</span>
 </a>
 </div>
@@ -246,7 +246,7 @@
 </div>
 <div class="mt-8 pt-4 flex items-center justify-between font-mono text-xs">
 <a class="font-bold uppercase tracking-wider text-brand-ink group-hover:text-brand-cobalt flex items-center gap-1" href="#terminal">
-              ROZPOCZNIJ POSTĘPOWANIE <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              ROZPOCZNIJ POSTĘPOWANIE <span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 <span class="text-brand-silver">KOD: REP-CIV</span>
 </div>
@@ -278,7 +278,7 @@
 </div>
 <div class="mt-8 pt-4 flex items-center justify-between font-mono text-xs">
 <a class="font-bold uppercase tracking-wider text-brand-ink group-hover:text-brand-cobalt flex items-center gap-1" href="#terminal">
-              AUDYTUJ NIERUCHOMOŚĆ <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              AUDYTUJ NIERUCHOMOŚĆ <span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 <span class="text-brand-silver">KOD: REAL-EST</span>
 </div>
@@ -310,7 +310,7 @@
 </div>
 <div class="mt-8 pt-4 flex items-center justify-between font-mono text-xs">
 <a class="font-bold uppercase tracking-wider text-brand-ink group-hover:text-brand-cobalt flex items-center gap-1" href="#terminal">
-              ZLEĆ WERYFIKACJĘ UMOWY <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              ZLEĆ WERYFIKACJĘ UMOWY <span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 <span class="text-brand-silver">KOD: B2B-CORP</span>
 </div>
@@ -342,7 +342,7 @@
 </div>
 <div class="mt-8 pt-4 flex items-center justify-between font-mono text-xs">
 <a class="font-bold uppercase tracking-wider text-brand-ink group-hover:text-brand-cobalt flex items-center gap-1" href="#terminal">
-              ODZYSKAJ DŁUG <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              ODZYSKAJ DŁUG <span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 <span class="text-brand-silver">KOD: DEBT-REC</span>
 </div>
@@ -374,7 +374,7 @@
 </div>
 <div class="mt-8 pt-4 flex items-center justify-between font-mono text-xs">
 <a class="font-bold uppercase tracking-wider text-brand-ink group-hover:text-brand-cobalt flex items-center gap-1" href="#terminal">
-              KONSULTACJA DYSKRETNA <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              KONSULTACJA DYSKRETNA <span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 <span class="text-brand-silver">KOD: FAM-LAW</span>
 </div>
@@ -406,7 +406,7 @@
 </div>
 <div class="mt-8 pt-4 flex items-center justify-between font-mono text-xs">
 <a class="font-bold uppercase tracking-wider text-brand-ink group-hover:text-brand-cobalt flex items-center gap-1" href="#terminal">
-              UMÓW GODZINĘ AUDYTU <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              UMÓW GODZINĘ AUDYTU <span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 <span class="text-brand-silver">KOD: ADV-DIAG</span>
 </div>
@@ -673,7 +673,7 @@
 <label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-brand-ink mb-2" for="synopsis">
                   05. Zarys Stanu Faktycznego / Terminy Pism *
                 </label>
-<textarea class="w-full bg-brand-concrete border border-brand-ink/20 p-4 font-sans text-sm focus:bg-white focus:border-brand-ink focus:ring-0 rounded-none transition-colors resize-none" id="synopsis" placeholder="Opisz krótko istotę problemu, datę ewentualnego doręczenia pozwu/wezwania oraz oczekiwany cel..." required="" rows="4"></textarea>
+<textarea class="w-full bg-brand-concrete border border-brand-ink/20 p-4 font-sans text-sm focus:bg-white focus:border-brand-ink focus:ring-0 rounded-none transition-colors resize-none" id="synopsis" placeholder="Opisz krótko istotę problemu, datę ewentualnego doręczenia pozwu/wezwania oraz oczekiwany cel…" required="" rows="4"></textarea>
 </div>
 <div class="border-t border-brand-ink/10 pt-4">
 <label class="flex items-start gap-3 cursor-pointer">
@@ -686,12 +686,12 @@
 <div>
 <button class="w-full sm:w-auto h-13 px-8 bg-brand-ink hover:bg-brand-cobalt text-white font-mono text-xs uppercase tracking-widest font-bold flex items-center justify-center gap-3 transition-colors shadow-[4px_4px_0px_0px_rgba(0,56,255,1)]" type="submit">
 <span>NADAJ ZGŁOSZENIE DO KANCELARII</span>
-<span class="material-symbols-outlined text-[18px]">send</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">send</span>
 </button>
 </div>
 <!-- Confirmation notification -->
 <div class="hidden p-4 bg-brand-ink text-white font-mono text-xs border-l-4 border-brand-cobalt flex items-center gap-3" id="terminal-sent">
-<span class="material-symbols-outlined text-brand-cobalt text-[20px]">check_circle</span>
+<span aria-hidden="true" class="material-symbols-outlined text-brand-cobalt text-[20px]">check_circle</span>
 <span>Zgłoszenie zarejestrowane. Radca prawny skontaktuje się w wyznaczonym terminie roboczym.</span>
 </div>
 </form>
