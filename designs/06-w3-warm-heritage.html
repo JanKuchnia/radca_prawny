@@ -16,19 +16,19 @@
       theme: {
         extend: {
           colors: {
-            parchment: "#fcfaf6",
-            "parchment-subtle": "#f4efe6",
-            "parchment-deep": "#ebe3d5",
-            forest: "#0d2b22",
-            "forest-light": "#143d32",
-            "forest-border": "#1f4e41",
-            terracotta: "#c2613b",
-            ochre: "#b45309",
-            "ochre-gold": "#c88a38",
+            parchment: "#f6f9fc",
+            "parchment-subtle": "#e6edf4",
+            "parchment-deep": "#d5e0eb",
+            forest: "#0d1c2b",
+            "forest-light": "#14283d",
+            "forest-border": "#1f364e",
+            terracotta: "#3b7ec2",
+            ochre: "#2b5e92",
+            "ochre-gold": "#3a80c6",
             ink: "#1c2321",
             "ink-soft": "#38433f",
             "ink-muted": "#606d67",
-            oak: "#4a3525",
+            oak: "#25374a",
           },
           fontFamily: {
             headline: ["'Playfair Display'", "serif"],
@@ -43,7 +43,7 @@
     @layer base {
       html { scroll-behavior: smooth; }
       body {
-        background-color: #fcfaf6;
+        background-color: #f6f9fc;
         color: #1c2321;
         font-family: 'Plus Jakarta Sans', sans-serif;
       }
@@ -56,11 +56,11 @@
       padding-top: 4px;
       padding-right: 12px;
       padding-bottom: 2px;
-      color: #0d2b22;
+      color: #0d1c2b;
       font-weight: 700;
     }
     .paper-texture {
-      background-image: radial-gradient(#d6cbba 0.75px, transparent 0.75px);
+      background-image: radial-gradient(#bac8d6 0.75px, transparent 0.75px);
       background-size: 16px 16px;
     }
   </style>
@@ -776,9 +776,9 @@
                 </a>
 </div>
 <!-- Wektorowa stylizacja mapy lokalnej (Żwirki i Wigury & Rynek) -->
-<div class="relative h-48 bg-[#ece5d8] border border-parchment-deep overflow-hidden flex items-center justify-center">
+<div class="relative h-48 bg-[#d8e2ec] border border-parchment-deep overflow-hidden flex items-center justify-center">
 <svg class="absolute inset-0 w-full h-full opacity-80" preserveaspectratio="none" viewbox="0 0 400 200">
-<rect fill="#f2ecdf" height="200" width="400"></rect>
+<rect fill="#dfe8f2" height="200" width="400"></rect>
 <!-- Tereny zielone wokół Raby i parki -->
 <path d="M 0,30 Q 100,50 150,10 Q 220,-10 260,30 L 220,70 L 40,60 Z" fill="#d9e3d4"></path>
 <path d="M 280,120 Q 330,150 380,110 L 400,180 L 290,190 Z" fill="#d9e3d4"></path>
@@ -786,15 +786,15 @@
 <path d="M 390,0 Q 340,90 310,130 T 280,200" fill="none" stroke="#bdd3e2" stroke-width="20"></path>
 <!-- Siatka ulic Myślenic -->
 <path d="M 0,100 L 400,120" stroke="#ffffff" stroke-width="14"></path>
-<path d="M 0,100 L 400,120" stroke="#b45309" stroke-width="5"></path>
+<path d="M 0,100 L 400,120" stroke="#2b5e92" stroke-width="5"></path>
 <path d="M 160,0 L 200,200" stroke="#ffffff" stroke-width="12"></path>
 <path d="M 60,0 L 80,200" stroke="#ffffff" stroke-width="6"></path>
 <path d="M 260,0 L 270,200" stroke="#ffffff" stroke-width="6"></path>
 <!-- Rynek w Myślenicach oznaczenie -->
-<rect fill="#e2d6c1" height="40" stroke="#b45309" stroke-width="1.5" width="45" x="70" y="80"></rect>
-<text fill="#0d2b22" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="bold" x="75" y="103">RYNEK</text>
+<rect fill="#c1d2e2" height="40" stroke="#2b5e92" stroke-width="1.5" width="45" x="70" y="80"></rect>
+<text fill="#0d1c2b" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="bold" x="75" y="103">RYNEK</text>
 <!-- Żwirki i Wigury ulica -->
-<text fill="#4a3525" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="bold" x="180" y="93">ŻWIRKI I WIGURY 10</text>
+<text fill="#25374a" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="bold" x="180" y="93">ŻWIRKI I WIGURY 10</text>
 </svg>
 <!-- Pinezka / Pieczęć Kancelarii na mapie -->
 <div class="relative z-10 flex flex-col items-center">
